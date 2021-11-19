@@ -2,9 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>TongSTN<200</title>
 </head>
 <body>
+<script>
+    function isPrime(num) {
+        if (num < 2) {
+            return false
+        } else {
+            for (let i = 2; i <= Math.sqrt(num); i++) {
+                if (num % i === 0) {
+                    return false
+                }
+            }
+        }
+        return true
+    }
+
+    function display() {
+        let num = 2
+        let sum = 0
+        for (let i = 0; i < 200;) {
+            if (isPrime(num)) {
+                sum += num
+                i++
+            }
+            num++
+        }
+        alert("Tổng SNT đầu tiên < 200 là: " + sum);
+    }
+
+    display()
+</script>
 
 </body>
 </html>

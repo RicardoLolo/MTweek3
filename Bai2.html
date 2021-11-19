@@ -5,6 +5,18 @@
     <title>Title</title>
 </head>
 <body>
+<input type="text" id="magic">
+<input type="button" value="nhan to a" onClick="nhap value a">
+<p id="result"></p>
+<script>
+    let arrRandom = []
+        let number;
+        do {
+            number = +prompt("Nhập đi bạn: ")
+            arrRandom.push(number)
+        } while (number !== -100)
+        console.log(arrRandom);
+</script>
 
 </body>
 </html>
